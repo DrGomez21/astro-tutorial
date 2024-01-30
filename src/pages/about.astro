@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navegacion from '../components/Navegacion.astro';
+import Footer from '../components/Footer.astro';
 
 const pageTitle = "Sobre mi";
 
@@ -42,9 +44,7 @@ const textCase = "capitalize";
 	</head>
 	<body>
 
-        <a href="/">Inicio</a>
-        <a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
+        <Navegacion />
         
 		<h1>{pageTitle}</h1>
         <h2>... ¡y mi nuevo sitio Astro!</h2>
@@ -69,5 +69,8 @@ const textCase = "capitalize";
         {happy && <p>Estoy feliz de aprender Astro</p>}
         {finished && <p>He terminado este tutorial</p>}
         {goal === 3 ? <p>Mi objetivo es terminar en 3 dias</p> : <p>Mi objetivo no son 3 dias</p>}
-	</body>
+
+        <Footer />
+    
+    </body>
 </html>

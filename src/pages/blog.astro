@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import Navegacion from '../components/Navegacion.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const pageTitle = "GodieBlog";
@@ -16,7 +16,7 @@ const pageTitle = "GodieBlog";
 	</head>
 	<body>
 
-        <Navegacion />
+        <Header />
         
 		<h1>{pageTitle}</h1>
         <h2>Mi espacio para compartir mis gustos</h2>
@@ -30,5 +30,8 @@ const pageTitle = "GodieBlog";
         </ul>
 
         <Footer />
+		<script>
+            import "../scripts/menu.js";
+        </script>
 	</body>
 </html>

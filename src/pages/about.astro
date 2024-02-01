@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import Navegacion from '../components/Navegacion.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const pageTitle = "Sobre mi";
@@ -43,8 +43,7 @@ const textCase = "capitalize";
         </style>
 	</head>
 	<body>
-
-        <Navegacion />
+        <Header />
         
 		<h1>{pageTitle}</h1>
         <h2>... ¡y mi nuevo sitio Astro!</h2>
@@ -71,6 +70,8 @@ const textCase = "capitalize";
         {goal === 3 ? <p>Mi objetivo es terminar en 3 dias</p> : <p>Mi objetivo no son 3 dias</p>}
 
         <Footer />
-    
+        <script>
+            import "../scripts/menu.js";
+        </script>
     </body>
 </html>
